@@ -1,0 +1,564 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khelega Free Fire tournament app</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Khelega Free Fire tournament ap" />
+  <meta name="description" content="Join Khelega Free Fire to play daily esports tournaments, build your gamer profile, and win amazing prizes. Download the app now!" />
+  <meta name="keywords" content="free fire tournament app, esports app, khelega free fire app, khelega free fire tournament app, khelega ff app, daily games, mobile gaming, khelega free fire" />
+  <meta name="author" content="Khelega Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://khelegafreefire.in/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://khelegafreefire.in/" />
+  <meta property="og:title" content="Khelega Free Fire – Play Esports Tournaments & Win Rewards" />
+  <meta property="og:description" content="Join Khelega Free Fire to play daily esports tournaments, build your gamer profile, and win amazing prizes." />
+  <meta property="og:image" content="https://i.ibb.co/SDzhqdMJ/banner.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://khelegafreefire.in/" />
+  <meta name="twitter:title" content="Khelega Free Fire – Play Esports Tournaments & Win Rewards" />
+  <meta name="twitter:description" content="Join Khelega Free Fire to play daily esports tournaments, build your gamer profile, and win amazing prizes." />
+  <meta name="twitter:image" content="https://i.ibb.co/SDzhqdMJ/banner.jpg" />
+
+  <!-- Icons & Theme -->
+  <link rel="icon" href="https://i.ibb.co/5WH4qFrg/IMG-1903-png.jpg" type="image/png" />
+  <meta name="theme-color" content="#070B28" />
+  <meta name="msapplication-TileColor" content="#070B28" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="en" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .logo-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      padding: 1rem 0;
+    }
+
+    .app-logo {
+      height: 80px;
+      width: auto;
+    }
+
+    .banner-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.85);
+      padding: 1rem;
+    }
+
+    .banner-text h2 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    .banner-text p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .banner-buttons-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .download-btn,
+    .login-btn {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.5rem 1.2rem;
+      border: 2px solid white;
+      border-radius: 10px;
+      background: transparent;
+    }
+
+    .download-btn img,
+    .login-btn img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .banner-separator {
+      width: 100%;
+      height: 5px;
+      background-color: yellow;
+    }
+
+    .section-title-block {
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 700px;
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .section-title.red { color: red; }
+    .section-title.yellow { color: #FFC609; }
+
+    .title-shape {
+      width: 120px;
+      margin: 0.5rem auto;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: #333;
+      margin: 1rem auto;
+      max-width: 700px;
+    }
+
+    .dark-section {
+      background-color: #070B28;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .games-image {
+      max-width: 300px;
+      margin: 1rem auto;
+      display: block;
+    }
+
+    .discover-subtitle,
+    .section-subtitle.white {
+      color: #ffffff;
+    }
+
+    .discover-download {
+      margin-top: 1rem;
+    }
+
+    .refer-section {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .refer-subtitle {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+
+    .refer-image {
+      max-width: 300px;
+      margin: auto;
+      display: block;
+    }
+
+    .yellow-section {
+      background-color: #FFC609;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .why-section {
+      background-color: #F92C2C;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .get-app-section {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .get-app-subtitle {
+      font-size: 1rem;
+      color: #333;
+      max-width: 700px;
+      margin: 1rem auto;
+      line-height: 1.6;
+    }
+
+    .constant-image {
+      width: 95%;
+      max-width: 600px;
+      margin: 1rem auto;
+      display: block;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 600px;
+      height: 315px;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    .circle-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #070B28;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .social-section {
+      background-color: #070B28;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .social-section h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+    }
+
+    .social-icons img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo + Hamburger -->
+  <div class="logo-container">
+    <img src="https://i.ibb.co/5WH4qFrg/IMG-1903-png.jpg" class="app-logo" alt="App Logo" />
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner-wrapper">
+    <img src="https://i.ibb.co/SDzhqdMJ/banner.jpg" alt="Banner" class="banner-img" />
+    <div class="banner-text">
+      <h2>Play Esports tournament &<br>win rewards</h2>
+      <p>Your first step to becoming a gamer!</p>
+      <div class="banner-buttons-row">
+        <a href="https://ga-fs.primexop.com/3934/androidBuilds/khelega-free-fireV1.apk" class="download-btn">
+          <img src="https://i.ibb.co/tkKJwqz/images.jpg" />Download Android App
+        </a>
+        <a href="https://ga.primexop.com/khelega-free-fire/auth/login" class="login-btn">
+          <img src="https://i.ibb.co/tnWvJLq/globe-symbol-planet-earth-internet-browser-sign-outline-modern-design-element-simple-black-flat-vect.jpg" />Login on Website
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner-separator"></div>
+
+  <!-- Games -->
+  <div class="section-title-block">
+    <div class="section-title">Games</div>
+    <img src="https://i.ibb.co/39HjzHtf/title-shape.png" class="title-shape" />
+    <p class="section-subtitle">Daily tournaments for your favourite games. Build your stats & win exciting prizes!</p>
+    <img src="https://i.ibb.co/DHPf4Kks/FFM.png" class="games-image" />
+  </div>
+
+  <!-- Gaming Stats -->
+  <div class="dark-section">
+    <div class="section-title red">Gaming Stats</div>
+    <img src="https://i.ibb.co/39HjzHtf/title-shape.png" class="title-shape" />
+    <p class="section-subtitle white">Build your journey as a gamer with us by enhancing your profile & checking vital statistics for your performance.</p>
+  </div>
+
+  <!-- Discover -->
+  <div class="dark-section">
+    <div class="section-title yellow">Discover</div>
+    <img src="https://i.ibb.co/39HjzHtf/title-shape.png" class="title-shape" />
+    <p class="discover-subtitle">Discover our exciting feature for stats, insights & tips to help you improve your gaming skills.</p>
+    <div class="discover-download">
+      <a href="https://ga-fs.primexop.com/3934/androidBuilds/khelega-free-fireV1.apk" class="download-btn">
+        <img src="https://i.ibb.co/tkKJwqz/images.jpg" />Download Android App
+      </a>
+    </div>
+    <img src="https://i.ibb.co/DD9pqC5J/1000001091.png" class="constant-image" />
+  </div>
+
+  <!-- Esports Tournaments -->
+  <div class="yellow-section">
+    <div class="section-title">Esports Tournaments on Your Platform</div>
+    <img src="https://i.ibb.co/39HjzHtf/title-shape.png" class="title-shape" />
+    <p class="section-subtitle">Start hosting Esports tournaments for all the popular games on your platform and engage your users.</p>
+    <iframe src="https://www.youtube.com/embed/7KIJtOh5EDQ?si=IUv5LxrieraZTS8e" allowfullscreen></iframe>
+  </div>
+
+  <!-- Refer Section -->
+  <div class="refer-section">
+    <div class="section-title">Refer a Friend</div>
+    <img src="https://i.ibb.co/39HjzHtf/title-shape.png" class="title-shape" />
+    <img src="https://i.ibb.co/svwRXHPz/refer-friend-left-img.png" class="refer-image" />
+    <p class="refer-subtitle">When your friend signs up you get free 150 coins & your friend gets 100 coins.</p>
+    <a href="https://ga-fs.primexop.com/3934/androidBuilds/khelega-free-fireV1.apk" class="download-btn" style="background-color:#000">
+      <img src="https://i.ibb.co/tkKJwqz/images.jpg" />Download Android App
+    </a>
+  </div>
+
+  <!-- Constantly Growing -->
+  <div class="section-title-block" style="background:#fff; padding: 2rem 1rem;">
+    <div class="section-title yellow">Constantly Growing</div>
+    <img src="https://i.ibb.co/39HjzHtf/title-shape.png" class="title-shape" />
+    <p class="section-subtitle">Providing the best Esports experience to millions of aspiring gamers.</p>
+    <img src="https://i.ibb.co/99WBmKrL/Screenshot-2025-06-28-15-20-52-635-com-android-chrome.png" class="games-image" style="max-width: 90%;" />
+    <img src="https://i.ibb.co/C3PVdLTk/Screenshot-2025-06-28-15-21-16-466-com-android-chrome.png" class="games-image" style="max-width: 90%;" />
+  </div>
+
+  <!-- Why Download -->
+  <div class="why-section">
+    <div class="section-title">Why Download Khelega Free Fire App?</div>
+    <img src="https://www.gamerji.com/img/title-shape-2.png" class="title-shape" />
+    <p class="section-subtitle">Khelega free fire app has been made for gamers to start and build their journey as a gamer and eventually become pro Esports athletes!</p>
+  </div>
+
+  <!-- Get App Section -->
+  <div class="get-app-section">
+    <div class="section-title">Get Khelega Free Fire App Now</div>
+    <p class="get-app-subtitle">
+      Download our Android & iOS App for ease of use<br>
+      Build your profile with cool avatars and stats from each tournament.<br>
+      Link your account with your college to participate in college leagues.<br>
+      Find all your Esports content in one place!<br>
+      Earn coins to win exciting rewards & merchandises
+    </p>
+    <a href="https://ga-fs.primexop.com/3934/androidBuilds/khelega-free-fireV1.apk" class="download-btn" style="background-color:#000">
+      <img src="https://i.ibb.co/tkKJwqz/images.jpg" />Download Android App
+    </a>
+    <img src="https://i.ibb.co/5WH4qFrg/IMG-1903-png.jpg" alt="App Logo" class="circle-logo" />
+  </div>
+
+  <!-- Social Section -->
+  <div class="social-section">
+    <h2>Social Channel</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/khelegafreefire_ofc?igsh=dHA2aHQ0Ym5xMTIy" target="_blank">
+        <img src="https://i.ibb.co/ZRpHLnJY/instagram-button-icon-set-instagram-screen-social-media-and-social-network-interface-template-storie.png" alt="Instagram">
+      </a>
+      <a href="https://youtube.com/@real_vecnaa?si=qRiHBUvbrPlRMODz" target="_blank">
+        <img src="https://i.ibb.co/99553CdM/youtube-logo-icon-modern-3d-style-485374-28912.jpg" alt="YouTube">
+      </a>
+      <a href="https://t.me/realvirex" target="_blank">
+        <img src="https://i.ibb.co/7d1Jrxbf/1024px-Telegram-logo-svg.png" alt="Telegram">
+      </a>
+      <a href="https://discord.gg/ve84k8SG" target="_blank">
+        <img src="https://i.ibb.co/zVcYvMcX/62b2265e038aad4d3ed7ca4b.png" alt="Discord">
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Khelega Free Fire. All rights reserved.
+  </footer>
+
+</body>
+</html><style>/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Logo section */
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 1rem 0;
+}
+
+.app-logo {
+  height: 80px;
+  width: auto;
+}
+
+/* Banner */
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.banner-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.banner-text p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.banner-buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.download-btn,
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover,
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.download-btn img,
+.login-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Yellow line separator */
+.banner-separator {
+  width: 100%;
+  height: 5px;
+  background-color: yellow;
+  margin-top: -5px;
+}
+
+/* Games section */
+.section-title-block {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  max-width: 700px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.title-shape {
+  width: 120px;
+  margin: 0.5rem auto;
+  display: block;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}</style>
